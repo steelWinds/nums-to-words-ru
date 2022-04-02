@@ -1,6 +1,6 @@
 const ErrorType = {
-    Unknow: "Unknow",
-    MuchGroups: "MuchGroups"
-} as const
+  Unknow: 'Unknow',
+  MuchGroups: 'MuchGroups',
+} as const;
 
-export {ErrorType}
+export {ErrorType};

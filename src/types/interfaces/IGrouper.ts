@@ -1,7 +1,7 @@
-type GroupCollectionType = Map<number, string>
+import {GroupCollectionType} from '@/annotations/index';
 
 interface IGrouper {
     getNumbersGroups(num: number): GroupCollectionType | never
 }
 
-export { IGrouper, GroupCollectionType }
+export default IGrouper;

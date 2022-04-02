@@ -1,16 +1,18 @@
-import type {ErrorTypeKeys} from '@/annotations/ErrorTypes'
-import {ErrorType} from '@/constants/ErrorType'
+/* eslint-disable require-jsdoc */
+
+import type {ErrorTypeKeys} from '@/annotations/index';
+import {ErrorType} from '@/constants/ErrorType';
 
 class CalculationError extends Error {
-    public readonly type: ErrorTypeKeys;
-    
-    constructor(message: string, type?: ErrorTypeKeys) {
-        super(message)
+  public readonly type: ErrorTypeKeys;
 
-        this.type = type ?? ErrorType.Unknow
+  constructor(message: string, type?: ErrorTypeKeys) {
+    super(message);
 
-        this.name = this.constructor.name
-    }
+    this.type = type ?? ErrorType.Unknow;
+
+    this.name = this.constructor.name;
+  }
 }
 
-export default CalculationError
+export default CalculationError;

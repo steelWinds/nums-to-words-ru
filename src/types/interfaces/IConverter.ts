@@ -2,4 +2,4 @@ interface IConverter {
     convert(num: number): string | never
 }
 
-export type { IConverter }
+export default IConverter;

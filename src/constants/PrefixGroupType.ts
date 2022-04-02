@@ -1,9 +1,9 @@
 const PrefixGroupType = [
-    'Hundreds',
-    'Thousands',
-    'Millions',
-    'Billions',
-] as const
+  'Hundreds',
+  'Thousands',
+  'Millions',
+  'Billions',
+] as const;
 
-export default PrefixGroupType
+export default PrefixGroupType;
 
