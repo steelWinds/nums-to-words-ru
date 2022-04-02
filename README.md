@@ -11,6 +11,16 @@ Run: ```pnpm i```
 
 Run: ```pnpm vite```
 
+### Use
+
+```
+    import Converter from 'nums-to-words-ru';
+
+    const converter = new Converter();
+
+    converter.convert(100)
+```
+
 ## License
 
 You can see current license in LICENSE file in root directory 
