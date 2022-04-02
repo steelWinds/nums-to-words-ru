@@ -21,7 +21,7 @@ class Grouper implements IGrouper {
         const numStringIterations = Math.ceil(numString.length / 3)
         
         try {
-            // Separate of number to triple groups and naming them wiht enum
+            // Separate of number to triple groups and naming them with enum
             for (let numIndex = 0; numIndex < numStringIterations; numIndex++) {
                 [numCurrentGroup, numString] = [numString.slice(-3), numString.slice(0, -3)]
 
