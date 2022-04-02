@@ -1,5 +1,5 @@
 {
-  "name": "numbs-to-words-ru",
+  "name": "nums-to-words-ru",
   "private": false,
   "files": ["dist"],
   "main": "./dist/numbs-to-words-ru.umd.js",
