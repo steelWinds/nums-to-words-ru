@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+        "@/*": ["./*"],
+        "@/interfaces/*": ["./types/interfaces/*"],
+        "@/annotations/*": ["./types/annotations/*"],
+        "@/classes/*": ["./modules/classes/*"],
+        "@/constants/*": ["./constants/*"],
+        "@/errors/*": ["./errors/*"],
+    },
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "types": ["node", "vite/client"]
+  },
+  "include": ["src", "src/**/*.ts"]
+}
