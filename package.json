@@ -1,18 +1,18 @@
 {
-  "name": "nums-to-words-ru",
+  "name": "nums-to-words-ru-lang-lang",
   "private": false,
   "files": [
     "dist",
     "types",
     "src"
   ],
-  "main": "./dist/nums-to-words-ru.es.js",
+  "main": "./dist/nums-to-words-ru-lang.es.js",
   "types": "./types/index.d.ts",
-  "module": "./dist/nums-to-words-ru.es.js",
+  "module": "./dist/nums-to-words-ru-lang.es.js",
   "exports": {
     ".": {
-      "import": "./dist/nums-to-words-ru.es.js",
-      "require": "./dist/nums-to-words-ru.umd.js"
+      "import": "./dist/nums-to-words-ru-lang.es.js",
+      "require": "./dist/nums-to-words-ru-lang.umd.js"
     }
   },
   "version": "0.0.7",

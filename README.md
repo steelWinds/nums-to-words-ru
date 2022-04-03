@@ -1,4 +1,4 @@
-# nums-to-words-ru
+# nums-to-words-ru-lang
 Simple script for translate number to word on ru-lang
 
 ## Getting started
@@ -14,7 +14,7 @@ Run: ```pnpm vite```
 ### Use
 
 ```
-    import Converter from 'nums-to-words-ru';
+    import Converter from 'nums-to-words-ru-lang';
 
     const converter = new Converter();
 
