@@ -1,11 +1,11 @@
-import {ErrorType} from '@/constants/ErrorType';
-import PrefixGroupType from '@/constants/PrefixGroupType';
+import {ErrorType} from './ErrorType';
+import PrefixGroupType from './PrefixGroupType';
 import {
   NumTokenTypes,
   NumWord,
   NumGroup,
   Tokens,
-} from '@/constants/NumberTypes';
+} from './NumberTypes';
 
 export {
   ErrorType,

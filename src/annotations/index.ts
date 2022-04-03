@@ -1,5 +1,5 @@
-import {ErrorType} from '@/constants/ErrorType';
-import {NumGroup} from '@/constants/NumberTypes';
+import {ErrorType} from '@/constants';
+import {NumGroup} from '@/constants';
 
 type ErrorTypeKeys = keyof typeof ErrorType
 type NumberGroupKeys = keyof typeof NumGroup

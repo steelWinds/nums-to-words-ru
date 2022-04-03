@@ -3,8 +3,8 @@
     "baseUrl": "./src",
     "paths": {
         "@/*": ["./*"],
-        "@/interfaces/*": ["./types/interfaces/*"],
-        "@/annotations/*": ["./types/annotations/*"],
+        "@/interfaces/*": ["./interfaces/*"],
+        "@/annotations/*": ["./annotations/*"],
         "@/classes/*": ["./modules/classes/*"],
         "@/constants/*": ["./constants/*"],
         "@/errors/*": ["./errors/*"],
@@ -18,10 +18,14 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+    "outDir": "dist",
     "types": ["node", "vite/client"]
   },
   "include": ["src", "src/**/*.ts"]

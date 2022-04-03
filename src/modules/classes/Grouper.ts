@@ -1,6 +1,6 @@
 /* eslint-disable require-jsdoc */
 
-import type {IGrouper} from '@/interfaces/index';
+import type {IGrouper} from '@/interfaces';
 import {PrefixGroupType, ErrorType, NumTokenTypes} from '@/constants';
 import {CalculationError} from '@/errors';
 

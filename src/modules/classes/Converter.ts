@@ -1,6 +1,6 @@
 /* eslint-disable require-jsdoc */
-import type {IConverter} from '@/interfaces/index';
-import type {NumberGroupKeys} from '@/annotations/index';
+import type {IConverter} from '@/interfaces';
+import type {NumberGroupKeys} from '@/annotations';
 import {
   NumTokenTypes,
   NumGroup,

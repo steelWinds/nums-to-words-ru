@@ -1,7 +1,7 @@
 /* eslint-disable require-jsdoc */
 
-import type {ErrorTypeKeys} from '@/annotations/index';
-import {ErrorType} from '@/constants/ErrorType';
+import type {ErrorTypeKeys} from '@/annotations';
+import {ErrorType} from '@/constants';
 
 class CalculationError extends Error {
   public readonly type: ErrorTypeKeys;

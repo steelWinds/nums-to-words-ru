@@ -1,4 +1,4 @@
-import {GroupCollectionType} from '@/annotations/index';
+import {GroupCollectionType} from '@/annotations';
 
 interface IGrouper {
     getNumbersGroups(num: number): GroupCollectionType | never

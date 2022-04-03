@@ -5,6 +5,7 @@
     "dist"
   ],
   "main": "./dist/numbs-to-words-ru.umd.js",
+  "types": "./types/index.d.ts",
   "module": "./dist/numbs-to-words-ru.es.js",
   "exports": {
     ".": {

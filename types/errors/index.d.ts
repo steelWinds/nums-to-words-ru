@@ -1,3 +1,2 @@
 import CalculationError from './CalculationError';
-
-export {CalculationError};
+export { CalculationError };

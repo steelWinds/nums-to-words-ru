@@ -1,4 +1,4 @@
-import type {IDigitsWords, IDigitsNumWords} from '@/interfaces/index';
+import type {IDigitsWords, IDigitsNumWords} from '@/interfaces';
 
 const NumTokenTypes = {
   Minus: 'minus',
