@@ -2,7 +2,9 @@
   "name": "nums-to-words-ru",
   "private": false,
   "files": [
-    "dist"
+    "dist",
+    "types",
+    "src"
   ],
   "main": "./dist/numbs-to-words-ru.umd.js",
   "types": "./types/index.d.ts",
@@ -13,7 +15,7 @@
       "require": "./dist/numbs-to-words-ru.umd.js"
     }
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
