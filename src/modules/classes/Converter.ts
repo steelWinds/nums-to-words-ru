@@ -34,20 +34,12 @@ class Converter implements IConverter {
 
       let wordsGroup: string[] = [];
 
-      if (reminder || hundredth) {
-        if (!reminder) {
-          wordsGroup = this.convertDoubleGroup({
-            number: hundredth,
-            group,
-          });
-        } else {
-          wordsGroup = this.convertTripleGroup({
-            group,
-            reminder,
-            hundredth,
-          });
-        }
-      }
+      wordsGroup = this.convertTripleGroup({
+        number,
+        group,
+        reminder,
+        hundredth,
+      });
 
       numWords.push(...wordsGroup);
     }
@@ -63,20 +55,17 @@ class Converter implements IConverter {
         hundredth,
         group,
       }: {
-                reminder: number;
-                hundredth: number;
-                group: NumberGroupKeys
-            }): string[] {
+        number: number;
+        reminder: number;
+        hundredth: number;
+        group: NumberGroupKeys
+    }): string[] {
     const words: Array<string> = [];
 
-    if (!hundredth) {
-      words.push(NumGroup.Hundreds[reminder]);
-    } else {
-      words.push(NumGroup.Hundreds[reminder], ...this.convertDoubleGroup({
-        number: hundredth,
-        group,
-      }));
-    }
+    words.push(NumGroup.Hundreds[reminder], ...this.convertDoubleGroup({
+      number: hundredth,
+      group,
+    }));
 
     return words;
   }
@@ -85,9 +74,9 @@ class Converter implements IConverter {
     number,
     group,
   }: {
-            number: number;
-            group: NumberGroupKeys;
-        }): string[] {
+        number: number;
+        group: NumberGroupKeys;
+    }): string[] {
     const words: Array<string> = [];
     const namedGroup = NumWord[group];
 

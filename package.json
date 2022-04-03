@@ -6,16 +6,16 @@
     "types",
     "src"
   ],
-  "main": "./dist/numbs-to-words-ru.umd.js",
+  "main": "./dist/nums-to-words-ru.es.js",
   "types": "./types/index.d.ts",
-  "module": "./dist/numbs-to-words-ru.es.js",
+  "module": "./dist/nums-to-words-ru.es.js",
   "exports": {
     ".": {
-      "import": "./dist/numbs-to-words-ru.es.js",
-      "require": "./dist/numbs-to-words-ru.umd.js"
+      "import": "./dist/nums-to-words-ru.es.js",
+      "require": "./dist/nums-to-words-ru.umd.js"
     }
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -8,7 +8,7 @@ const config: UserConfigExport = defineConfig({
   build: {
     lib: {
       entry: resolve('src/index.ts'),
-      name: 'numbs-to-words-ru',
+      name: 'nums-to-words-ru',
     },
   },
 
