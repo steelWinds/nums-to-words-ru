@@ -13,7 +13,7 @@
       "require": "./dist/numbs-to-words-ru.umd.js"
     }
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
