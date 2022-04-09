@@ -7,6 +7,7 @@ import {
   NumWord,
   Tokens,
 } from '@/constants';
+import {getDeclinsionNumWord} from '@/utils/getDeclinsionNumWord';
 import Grouper from './Grouper';
 
 class Converter implements IConverter {
@@ -44,7 +45,7 @@ class Converter implements IConverter {
       numWords.push(...wordsGroup);
     }
 
-    return numWords.join(' ');
+    return numWords.join(' ').trim();
   }
 
   // Convert separate numbers groups
@@ -63,7 +64,8 @@ class Converter implements IConverter {
     const words: Array<string> = [];
 
     words.push(NumGroup.Hundreds[reminder], ...this.convertDoubleGroup({
-      number: hundredth,
+      reminder: reminder,
+      hundredth,
       group,
     }));
 
@@ -71,20 +73,26 @@ class Converter implements IConverter {
   }
 
   private convertDoubleGroup({
-    number,
+    reminder,
+    hundredth,
     group,
   }: {
-        number: number;
+        reminder: number
+        hundredth: number;
         group: NumberGroupKeys;
     }): string[] {
     const words: Array<string> = [];
     const namedGroup = NumWord[group];
+    const numWordGroup = NumGroup?.[group];
 
-    const numUnits = number % 10;
-    const numTens = Math.trunc(number / 10);
+    const numUnits = hundredth % 10;
+    const numTens = Math.trunc(hundredth / 10);
+
+    const numUnitsGroup = (numWordGroup && namedGroup) ?
+      numWordGroup : NumGroup.Units;
 
     if (!numTens) {
-      words.push(NumGroup.Units[numUnits]);
+      words.push(numUnitsGroup[numUnits]);
     } else if (!numUnits && numTens !== 1) {
       words.push(NumGroup.Tens[numTens]);
     } else if (numTens === 1) {
@@ -96,29 +104,11 @@ class Converter implements IConverter {
       );
     }
 
-    if (namedGroup) {
-      words.push(this.getDeclinsionNumWord(number, namedGroup));
+    if (namedGroup && (hundredth || reminder)) {
+      words.push(getDeclinsionNumWord(hundredth, namedGroup));
     }
 
     return words;
-  }
-
-  // eslint-disable-next-line require-jsdoc
-  private getDeclinsionNumWord(num: number, group: readonly string[]): string {
-    let word = '';
-
-    const tens = num % 10;
-    const hundredts = num % 100;
-
-    if (tens === 1 && (hundredts < 10 || hundredts > 19)) {
-      word = group[0];
-    } else if (tens > 1 && tens < 5 && hundredts > 19) {
-      word = group[1];
-    } else {
-      word = group[2];
-    }
-
-    return word;
   }
 }
 

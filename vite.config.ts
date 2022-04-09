@@ -20,6 +20,7 @@ const config: UserConfigExport = defineConfig({
       '@/classes/': resolve('./src/modules/classes/'),
       '@/constants/': resolve('./src/constants/'),
       '@/errors/': resolve('./src/errors/'),
+      '@/utils/': resolve('./src/utils/'),
     },
   },
 });

@@ -57,10 +57,14 @@ const Hundreds: IDigitsNumWords = {
   9: 'девятьсот',
 } as const;
 
-const Thousands: IDigitsNumWords = {
+let Thousands: IDigitsNumWords = {
   1: 'одна',
   2: 'две',
 } as const;
+
+// Modify Thousands group
+
+Thousands = <IDigitsNumWords>Object.assign({}, Units, Thousands);
 
 const NumGroup = {
   Units,
