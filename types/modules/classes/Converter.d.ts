@@ -5,6 +5,5 @@ declare class Converter implements IConverter {
     convert(num: number): string;
     private convertTripleGroup;
     private convertDoubleGroup;
-    private getDeclinsionNumWord;
 }
 export default Converter;
