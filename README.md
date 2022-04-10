@@ -13,11 +13,15 @@ Simple script for translate number to word on ru-lang
 
 ### Install Vite and other packages
 
-Run: ```pnpm i```
+```pnpm i```
 
 ### Run hmr-build for contribute
 
-Run: ```pnpm vite```
+```pnpm vite```
+
+### Run unit-tests
+
+```pnpm test```
 
 ### Use
 
