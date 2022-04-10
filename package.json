@@ -15,7 +15,7 @@
       "require": "./dist/nums-to-words-ru-lang.umd.js"
     }
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
