@@ -1,3 +1,6 @@
+// eslint-disable-next-line spaced-comment
+/// <reference types="vitest" >
+
 import path from 'path';
 import {defineConfig} from 'vite';
 import type {UserConfigExport} from 'vite';
