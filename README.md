@@ -25,7 +25,7 @@ Run: ```pnpm vite```
 
     const converter = new Converter();
 
-    converter.convert(100)
+    const words = converter.convert(100);
 ```
 
 ## License
