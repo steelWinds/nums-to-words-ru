@@ -2,6 +2,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/steelWinds/nums-to-words-ru-lang/Build-and-test?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/steelWinds/nums-to-words-ru-lang?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/steelWinds/nums-to-words-ru?style=for-the-badge)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/steelWinds/nums-to-words-ru-lang?style=for-the-badge)
 
 ![npm type definitions](https://img.shields.io/npm/types/nums-to-words-ru-lang?style=for-the-badge)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/nums-to-words-ru-lang?style=for-the-badge)
