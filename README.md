@@ -1,3 +1,5 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/steelWinds/nums-to-words-ru-lang/Build-and-test?style=social)
+
 # nums-to-words-ru-lang
 Simple script for translate number to word on ru-lang
 
