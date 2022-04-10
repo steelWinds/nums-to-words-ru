@@ -100,7 +100,7 @@ class Converter implements IConverter {
     } else {
       words.push(
           NumGroup.Tens[numTens],
-          NumGroup.Units[numUnits],
+          numUnitsGroup[numUnits],
       );
     }
 
